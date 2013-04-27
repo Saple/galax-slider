@@ -1,5 +1,4 @@
 # Galax Slider
-The following is a list of notes regarding the examples in this directory.
 
 ## What is it?
 

@@ -59,7 +59,7 @@
 			thumbsStyle: '',
 			// Be cautious when changing settings below!
 			slicesDirection: false,
-			debug: true
+			debug: false
 		};
 
 		var f = {};
@@ -137,7 +137,6 @@
 					type: "GET",
 					// needed to make json return before continuing
 					async: false,
-					//data: { search: "searchString" },
 					dataType: "json",
 					error: function( error ) {
 						if ( settings.debug ) {
@@ -164,7 +163,6 @@
 						if ( settings.debug ) {
 							console.log( '[returnJSON] JSON loaded succesfully' );
 						}
-
 					}
 				});
 			});
