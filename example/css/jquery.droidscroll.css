@@ -1,0 +1,114 @@
+
+.droidscroll {
+	position: relative;
+	overflow: hidden;
+}
+
+.ds-view {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	/* cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEUAAAAAAAD///+D3c/SAAAAAXRSTlMAQObYZgAAAEVJREFUeF4txLENgDAMRcHnJhNQZRoXiB0YwX8aGihSI6R4ShIpxR2YD8cN5Wk+27GvnbNgUwah7Ej5UnNUVhc2Q+lQVz+Stxhmw6VvVAAAAABJRU5ErkJggg=='), move; /* grab.png */
+}
+
+.ds-view, .ds-thumb {
+
+	transition-property: top, left; -moz-transition-property: top, left; -webkit-transition-property: top, left; -o-transition-property: top, left;
+	transition-duration: .5s; -moz-transition-duration: .5s; -webkit-transition-duration: .5s; -o-transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0.25, 0.5, 0.5, 1); -moz-transition-timing-function: cubic-bezier(0.25, 0.5, 0.5, 1); -webkit-transition-timing-function: cubic-bezier(0.25, 0.5, 0.5, 1); -o-transition-timing-function: cubic-bezier(0.25, 0.5, 0.5, 1); /* easeOutQuad */
+}
+
+.ds-grabbing .ds-view, .ds-grabbing .ds-thumb {
+	transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s;
+}
+
+.ds-view-h {
+	display: inline;
+	max-height: 100%;
+	min-height: 100%;
+	height: 100%;
+}
+
+.ds-view-v {
+	max-width: 100%;
+	min-width: 100%;
+	width: 100%;
+}
+
+.ds-view pre, .ds-view code, .ds-view input, .ds-view textarea {
+	cursor: text !important; /* was: auto */
+}
+
+.ds-grabbing .ds-view, .ds-grabbing a {
+	/* cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEUAAAAAAAD///+D3c/SAAAAAXRSTlMAQObYZgAAADhJREFUeF51xKERwCAURMF3JkVQTUw89ID61aDRDOKqzDBgWbHclQ80e0Z2hfBAq8e7hlaEX0inH8FoEHvvv4uAAAAAAElFTkSuQmCC'), move !important; */ /* grabbing.png */
+}
+
+.ds-bar {
+	position: absolute;
+	transition: opacity 500ms; -moz-transition: opacity 500ms; -webkit-transition: opacity 500ms; -o-transition: opacity 500ms;
+	z-index: 9999;
+	opacity: 0;
+}
+
+.ds-bar-visible {
+	opacity: 1;
+}
+
+.ds-bar-v {
+	top: 8px;
+	right: 2px;
+	bottom: 8px;
+	width: 5px;
+}
+
+.ds-bar-h {
+	right: 8px;
+	bottom: 0px;
+	left: 8px;
+	height: 5px;
+}
+
+.ds-track {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.ds-track, .ds-thumb {
+	border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px;
+}
+
+.ds-thumb {
+	position: absolute;
+	top: bottom;
+	left: 0;
+}
+
+.ds-bar-v .ds-thumb {
+	width: 5px;
+	height: 100%;
+}
+
+.ds-bar-h .ds-thumb {
+	width: 100%;
+	height: 5px;
+}
+
+.ds-track {
+	background-color: rgba(255, 255, 255, .25);
+}
+
+.ds-thumb {
+	/* background-color: rgba(255, 255, 255, .75); */
+	background-color: rgba(68,68,68, .75)
+}
+
+.invert .ds-track {
+	background-color: rgba(0, 0, 0, .25);
+}
+
+.invert .ds-thumb {
+	background-color: rgba(0, 0, 0, .75);
+}

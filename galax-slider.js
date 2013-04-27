@@ -15,7 +15,6 @@
  *		droidscroll 1.3 ( http://debeterevormgever.nl/en/software/droidscroll ) *
  *		jQuery Easing Plugin 1.3 ( http://gsgd.co.uk/sandbox/jquery/easing/ ) **
  *
- *		* linking the css-file of droidscroll is not required you need to link only the js-file!
  *      ** easing plugin is only required when using it's easings
  */
  
