@@ -2,15 +2,13 @@
  * jQuery Galax Slider (Galax)
  *
  * jQuery plugin for creating slider containing images for ex. showing headlines on webpage
- * http://students.oamk.fi/~~t2musa00/galax.html
+ * https://github.com/Saple/galax-slider/
  *
- * Copyright 2012, Sakari Mursu
+ * Copyright 2012-2013, Sakari Mursu
  *
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  *
- * @version: 0.1.1 beta
- * @date 2012.11.14
  * @author Sakari Mursu
  * @dependencies:
  * 		jQuery v1.8.2 ( http://jquery.com/ )
@@ -20,15 +18,7 @@
  *		* linking the css-file of droidscroll is not required you need to link only the js-file!
  *      ** easing plugin is only required when using it's easings
  */
-
- /*
-	Changelog:
-	12-11-14 Added detection for mobile browser and disabling autoplay if plugin is used with mobile browser
-	
-	Todo:
-	12-09-29 Add arrows to thumbnails to show that there are more thumbnails hidden also add autoscroll with autoplay (every time slide changes -> move thumbs 1 thumb width
-*/
-
+ 
 (function ($) {
 'use strict';
 	$.fn.galax = function( options ) {

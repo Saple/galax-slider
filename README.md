@@ -10,4 +10,4 @@ Galax Slider is an jQuery image slider plugin.
 	$("#first").galax();
 
 ## Licence
-Copyright (c) 2013 Sakari Mursu, released under the MIT License.
+Copyright (c) 2012-2013 Sakari Mursu, released under the MIT License.
